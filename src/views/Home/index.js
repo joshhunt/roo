@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { getRestaurantData } from "../../api";
+import React from "react";
+import { useRestaurantAPI } from "../../api";
 import Restaurant from "../../components/Restaurant";
 
 import logo from "../../svgs/logo-horizontal.svg";
@@ -8,25 +8,15 @@ import userIcon from "../../svgs/user-icon.svg";
 import s from "./styles.module.css";
 import NeighborhoodBanner from "../../components/NeighborhoodBanner";
 
-export function useRestaurantAPI() {
-  const [data, setData] = useState();
-
-  useEffect(() => {
-    getRestaurantData().then(d => setData(d));
-  });
-
-  return data;
-}
-
-function App() {
+function Home() {
   const data = useRestaurantAPI();
 
   if (!data) {
-    return null;
+    return <div>Loading...</div>;
   }
 
   return (
-    <div className="App">
+    <div>
       <header className={s.header}>
         <img src={logo} alt="deliveroo logo" />
 
@@ -49,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
