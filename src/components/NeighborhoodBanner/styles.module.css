@@ -1,0 +1,38 @@
+.root {
+  background: #00ccbc;
+  color: white;
+}
+
+.container {
+  composes: _container from "../../views/App/styles.module.css";
+  display: flex;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-family-headings);
+}
+
+.heading {
+  font-size: 34px;
+  margin: 0;
+  font-family: var(--font-family-headings);
+}
+
+.button {
+  background: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  color: #00ccbc;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 600;
+}

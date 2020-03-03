@@ -1,13 +1,78 @@
+:root {
+  --font-family-headings: stratos;
+  --font-family-body: plex-sans;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-family-body), -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: stratos;
+  src: url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/stratos-semibold.b00ca2148f03da7f28865214a97c568e.woff2)
+      format("woff2"),
+    url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/stratos-semibold.b472031ae924d67d8b0fbc2619a8c048.woff)
+      format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: "fallback";
+}
+
+@font-face {
+  font-family: plex-sans;
+  src: url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/IBMPlexSans-Regular.dc16f54ea33a9556b9035a9b05e96711.woff2)
+      format("woff2"),
+    url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/IBMPlexSans-Regular.90c06fa94e5ca622a4d907c9e1236f66.woff)
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: "swap";
+}
+
+@font-face {
+  font-family: plex-sans;
+  src: url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/IBMPlexSans-Bold.1920d19939b703c6610b0e6c197e3fce.woff2)
+      format("woff2"),
+    url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/IBMPlexSans-Bold.b869dddfc0d9f77c4433755044741a7d.woff)
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: "swap";
+}
+
+@font-face {
+  font-family: plex-sans;
+  src: url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/IBMPlexSans-Italic.151a0060b94adcc3a2946ba40e031419.woff2)
+      format("woff2"),
+    url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/IBMPlexSans-Italic.70ad3c45ea4ff4574cf7afcb4213d8dc.woff)
+      format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: "swap";
+}
+
+@font-face {
+  font-family: plex-sans;
+  src: url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/IBMPlexSans-BoldItalic.959d92178a785f445a22ba27a5d6b751.woff2)
+      format("woff2"),
+    url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/IBMPlexSans-BoldItalic.661813768e1221700090b99665bb82b9.woff)
+      format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: "swap";
 }

@@ -1,0 +1,45 @@
+._container {
+  width: 100%;
+  max-width: 1158px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.header {
+  composes: _container;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurants {
+  composes: _container;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.count {
+  composes: _container;
+  color: #828585;
+  margin-top: 32px;
+}
+
+.user > * {
+  vertical-align: middle;
+}
+
+.userName {
+  padding-left: 16px;
+  display: none;
+}
+
+@media screen and (min-width: 664px) {
+  .userName {
+    display: initial;
+  }
+}
