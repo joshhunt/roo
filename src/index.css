@@ -22,6 +22,7 @@ body {
   box-sizing: border-box;
 }
 
+/* I sure hope these urls don't change... */
 @font-face {
   font-family: stratos;
   src: url(https://consumer-component-library.roocdn.com/19.2.1/static/fonts/stratos-semibold.b00ca2148f03da7f28865214a97c568e.woff2)

@@ -4,7 +4,7 @@
 }
 
 .container {
-  composes: _container from "../../views/App/styles.module.css";
+  composes: _container from "../../views/Home/styles.module.css";
   display: flex;
   padding-top: 48px;
   padding-bottom: 48px;
